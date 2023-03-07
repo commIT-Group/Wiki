@@ -37,12 +37,50 @@ Choose the option that works best for you.
 ### 5. Done!
 
 _____________
-## How to create a branch
+## How to create a branch: GitHub, option 1 (not recommended)
 
-Branching can be done in a number of ways. Here is an example how to do it from the level of a GitHub repo.
+Branching can be done in a number of ways. Here is an example how to do it from the level of a GitHub repo. Option 1.
 
 ### 1. Go to the project page
 e.g. [this one](https://github.com/commIT-Group/demo-repository). You can use this demo repository to test things out.
 
-### 2. Click on the tab with the ```main``` branch name:
+### 2. Click on the tab with the ```main``` branch name.
+It opens up a dialog that allows you to switch to other existing branches, but also allows to create a new one. This option offers less control in regards to the branching point.
+
+### 3. Enter a name for a branch in the textbox
+### 4. Click on "create branch: [name]".
 ![](https://github.com/commIT-Group/Wiki/blob/main/Branching_01_a.png)
+_____________
+## How to create a branch: GitHub, option 2 (recommended)
+
+Branching can be done in a number of ways. Here is an example how to do it from the level of a GitHub repo. Option 2.
+
+### 1. Go to the project page
+e.g. [this one](https://github.com/commIT-Group/demo-repository). You can use this demo repository to test things out.
+
+### 2. Click on the branch icon (second tile).
+![](https://github.com/commIT-Group/Wiki/blob/main/Branching_02_a.png)
+
+### 3. New screen opens up. It looks like this:
+![](https://github.com/commIT-Group/Wiki/blob/main/Branching_02_b.png)
+
+Click on the green button: "Create a new branch".
+### 4. This opens a popup.
+![](https://github.com/commIT-Group/Wiki/blob/main/Branching_02_c.png)
+
+Fill in the branch name, select branch source and click the green button. Done!
+
+_____________
+## How to create a branch: Command line (recommended)
+
+Branching can also be done properly, from the command line / terminal.
+
+### 1. Make sure you are in the repo.
+
+You can check where you are in a local file repository using the ```pwd``` command. It should print working directory (aka filepath).
+### 2. Check which branch is currently active using the command: ```git branch```. 
+It should list all the branches that are in a certain repository. A * will appear next to the currently active branch.
+### 3. Create a new branch using the command: ```git branch [name-of-the-new-branch]``` 
+(skip the square brackets, don't use spaces). It will create a new branch at the current commit.
+### 4. To switch to a new branch, use the command: ```git checkout [name-of-the-branch]```. 
+This command will switch your code changes to the branch you specified.
